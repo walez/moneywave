@@ -1,9 +1,9 @@
 "use strict";
 var Moneywave_1 = require("./Moneywave");
 var Resource_1 = require("./Resource");
-var Wallet_1 = require("./Wallet");
-var Account_1 = require("./Account");
-var Card_1 = require("./Card");
+var Wallet_1 = require("./services/Wallet");
+var Account_1 = require("./services/Account");
+var Card_1 = require("./services/Card");
 function MakeWave(options) {
     var wave = new Moneywave_1.default(options);
     return {
