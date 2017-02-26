@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "module": "es6",
+        "target": "es5",
+        "noImplicitAny": false,
+        "sourceMap": false,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "outDir": "./dist",
+        "lib": ["ES2015", "es6", "dom"],
+        "typeRoots": [
+          "./node_modules/@types"
+        ]
+    },
+    "files": [
+      "./src/index.ts",
+      "./src/Moneywave.ts",
+      "./src/Resource.ts",
+      "./src/Wallet.ts",
+      "./src/Account.ts",
+      "./src/Card.ts"
+    ]
+}
