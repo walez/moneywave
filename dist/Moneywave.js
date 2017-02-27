@@ -45,7 +45,7 @@ var Moneywave = (function () {
         this.accessToken = null;
         this.useCache = options.cache || false;
         if (this.useCache)
-            this.cache = new NodeCache({ stdTTL: 5400000 });
+            this.cache = new NodeCache({ stdTTL: 5400 });
     }
     Moneywave.prototype.getToken = function () {
         return this.cache.get("access-token");
