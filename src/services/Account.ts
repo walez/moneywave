@@ -15,7 +15,7 @@ export default class Account {
     let options = {
       uri: '/v1/transfer',
       form: {
-        params
+        ...params
       }
     };
 
@@ -27,7 +27,7 @@ export default class Account {
       method: 'GET',
       uri: '/v1/transfer/charge/auth/account',
       qs: {
-        params
+        ...params
       }
     };
 
@@ -38,7 +38,7 @@ export default class Account {
     let options = {
       uri: '/v1/transfer/disburse/retry',
       form: {
-        params
+        ...params
       }
     };
 

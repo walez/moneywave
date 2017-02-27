@@ -12,7 +12,7 @@ export default class Wallet {
     let options = {
       uri: '/v1/disburse',
       form: {
-        params
+        ...params
       }
     };
 
@@ -24,7 +24,7 @@ export default class Wallet {
     let options = {
       uri: '/v1/disburse/bulk',
       form: {
-        params
+        ...params
       }
     };
 
@@ -35,7 +35,7 @@ export default class Wallet {
     let options = {
       uri: '/v1/transfer/disburse/retry',
       form: {
-        params
+        ...params
       }
     };
 
@@ -55,7 +55,7 @@ export default class Wallet {
     let options = {
       uri: '/v1/disburse/status',
       form: {
-        params
+        ...params
       }
     };
 

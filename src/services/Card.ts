@@ -12,7 +12,7 @@ export default class Card {
     let options = {
       uri: '/v1/transfer',
       form: {
-        params
+        ...params
       }
     };
 
@@ -24,7 +24,7 @@ export default class Card {
       method: 'GET',
       uri: '/v1/transfer/charge/auth/card',
       qs: {
-        params
+        ...params
       }
     };
 
@@ -35,7 +35,7 @@ export default class Card {
     let options = {
       uri: '/v1/get-charge',
       form: {
-        params
+        ...params
       }
     };
 
@@ -46,7 +46,7 @@ export default class Card {
     let options = {
       uri: '/v1/transfer/charge/tokenize/card',
       form: {
-        params
+        ...params
       }
     };
 
@@ -57,7 +57,7 @@ export default class Card {
     let options = {
       uri: '/v1/transfer/disburse/retry',
       form: {
-        params
+        ...params
       }
     };
 

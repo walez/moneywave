@@ -1,4 +1,12 @@
 "use strict";
+var __assign = (this && this.__assign) || Object.assign || function(t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+        s = arguments[i];
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+            t[p] = s[p];
+    }
+    return t;
+};
 var Card = (function () {
     function Card(wave) {
         this.wave = wave;
@@ -6,9 +14,7 @@ var Card = (function () {
     Card.prototype.transfer = function (params, callback) {
         var options = {
             uri: '/v1/transfer',
-            form: {
-                params: params
-            }
+            form: __assign({}, params)
         };
         return this.wave.makeRequest(options, true, false, callback);
     };
@@ -16,36 +22,28 @@ var Card = (function () {
         var options = {
             method: 'GET',
             uri: '/v1/transfer/charge/auth/card',
-            qs: {
-                params: params
-            }
+            qs: __assign({}, params)
         };
         return this.wave.makeRequest(options, true, false, callback);
     };
     Card.prototype.getCharge = function (params, callback) {
         var options = {
             uri: '/v1/get-charge',
-            form: {
-                params: params
-            }
+            form: __assign({}, params)
         };
         return this.wave.makeRequest(options, true, false, callback);
     };
     Card.prototype.tokenizeCard = function (params, callback) {
         var options = {
             uri: '/v1/transfer/charge/tokenize/card',
-            form: {
-                params: params
-            }
+            form: __assign({}, params)
         };
         return this.wave.makeRequest(options, true, false, callback);
     };
     Card.prototype.retryTransaction = function (params, callback) {
         var options = {
             uri: '/v1/transfer/disburse/retry',
-            form: {
-                params: params
-            }
+            form: __assign({}, params)
         };
         return this.wave.makeRequest(options, true, false, callback);
     };
