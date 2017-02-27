@@ -1,5 +1,5 @@
 {
-  "name": "moneywavejs",
+  "name": "moneywave",
   "version": "0.1.0",
   "description": "Moneywave NodeJS Client",
   "main": "dist/index.js",
