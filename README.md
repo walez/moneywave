@@ -4,13 +4,13 @@ NodeJS client for accessing Moneywave services
 ### Installation
 
 ```
-npm install moneywavejs
+npm install moneywave
 ```
 
 ### Usage
 
 ```js
-var Moneywave = require('moneywavejs');
+var Moneywave = require('moneywave');
 
 var options = {
   apiKey: 'YOUR_API_KEY',
