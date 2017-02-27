@@ -25,7 +25,7 @@ moneywave.resources.validateBankAccount("0690000004", "044")
   .catch((error) => console.log(error.error));
 
 //Pass callback as last argument if you want to use callbacks
-moneywave.resource.validateBankAccount("0690000004", "044", (err, value) => {
+moneywave.resources.validateBankAccount("0690000004", "044", (err, value) => {
   console.log(err, value)
 });
 
