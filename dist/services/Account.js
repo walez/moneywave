@@ -24,9 +24,9 @@ var Account = (function () {
     };
     Account.prototype.validateAccount = function (params, callback) {
         var options = {
-            method: 'GET',
+            method: 'POST',
             uri: '/v1/transfer/charge/auth/account',
-            qs: __assign({}, params)
+            form: __assign({}, params)
         };
         return this.wave.makeRequest(options, true, false, callback);
     };

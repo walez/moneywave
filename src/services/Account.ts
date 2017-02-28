@@ -24,9 +24,9 @@ export default class Account {
 
   public validateAccount(params, callback?) {
     let options = {
-      method: 'GET',
+      method: 'POST',
       uri: '/v1/transfer/charge/auth/account',
-      qs: {
+      form: {
         ...params
       }
     };
