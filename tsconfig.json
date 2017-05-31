@@ -16,8 +16,8 @@
       "./src/index.ts",
       "./src/Moneywave.ts",
       "./src/Resource.ts",
-      "./src/Wallet.ts",
-      "./src/Account.ts",
-      "./src/Card.ts"
+      "./src/services/Wallet.ts",
+      "./src/services/Account.ts",
+      "./src/service/Card.ts"
     ]
 }
